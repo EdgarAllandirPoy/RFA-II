@@ -1,0 +1,80 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.uncyc.org/commons/0/0d/Weeeeeeeegeeeeeee.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.mario {
+    display: flex;
+    justify-content: left;
+   width: 200px;
+  height: 200px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrinho-icon img{
+    width: 50px;
+    height: 50px;}
+
+#header {
+    margin: 0 100px;
+}
+
+#carrinho-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+
+}
+
+.produto-linha{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.produtos{
+    display: flex;
+    
+    flex-direction: column;
+    width: 200vw;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.infos {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/800px-Flag_of_Italy.svg.png);
+background-size: cover;
+}
+
+h3, p {
+    color:rgb(3, 1, 19);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   width:25vh;
+}
+

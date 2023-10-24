@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+<link rel="shortcut icon" href="https://preview.redd.it/mario-is-a-fascist-dictator-v0-0v5uhdwv2zea1.jpg?width=512&format=pjpg&auto=webp&s=9993adfbb9ce1684645165db41fa3cdef926fcd6">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">l'Elegante Emporium <span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="img/carrinho-de-supermercado-180-litros.jpg" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display:none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor total: R$0,00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/1603337_1.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Fedora </h3>
+                            <p>R$ 40,00</p>
+                            <button onclick="addCarrinho('Fedora', 40.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/41vW7J8WdpL._AC_SY350_.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Conjunto Colete</h3>
+                            <p>R$ 70,00</p>
+                            <button onclick="addCarrinho('Conjunto Colete', 90.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/277814-original.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Conjuto Colete e Terno</h3>
+                            <p>R$ 100,00</p>
+                            <button onclick="addCarrinho('Conjuto Colete e Terno', 100.00)">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/rifle-chiappa-ak-47-22lr-madeira-metal.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Tommy Gun</h3>
+                            <p>R$ 120,00</p>
+                            <button onclick="addCarrinho('Tommy Gun', 120.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/D_NQ_NP_722072-MLB32196692688_092019-O.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Charutos Toscana</h3>
+                            <p>R$ 30,00</p>
+                            <button onclick="addCarrinho('Charutos Toscana', 30.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/71846.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Conjunto de Bersagliere</h3>
+                            <p>R$ 170,00</p>
+                            <button onclick="addCarrinho('Conjunto de Bersagliere', 170.00)">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
